@@ -7,18 +7,19 @@ let playerList = [];
 $("#submit").on("click", (event) => {
 
     event.preventDefault(); 
-    //add a new player
+    // add a player to list 
     let newPlayer = $("#add").val();
     // clear text field on submit
     $("#add").val('').removeAttr('checked');
     // only submit completed field 
     if (newPlayer.length > 0) {
-    //pushes the player to playerList array
+    //push the name to playerList array
     playerList.push(newPlayer);
-    //output players to list
+    //output player names to list
     $("<ul>"+newPlayer+"</ul>").appendTo("#list");
     
     }
+
 });
 
     //shuffle function 
@@ -32,7 +33,7 @@ $("#submit").on("click", (event) => {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
-    // And swap it with the current element.
+    // And swap it with the current element
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
@@ -40,14 +41,25 @@ $("#submit").on("click", (event) => {
     }   
 
     return array;
-}
+    
+    }
 
+
+        //randomise and pair function
         let button = $("#randomise");
         button.on("click", () => {
-        //CSS animate 
+        //CSS animate class
         $('#game').addClass('animated shake');
         //Stop adding on shuffle
         $('#game').empty(); 
+
+        //alert if total is odd
+        if (playerList.length % 2 !== 0) {
+
+            alert("You must have an even number of players to randomise and match!");
+
+            //continue if total is even
+            } else {
             
             //create pairs array
             let pairs = [];
@@ -66,8 +78,9 @@ $("#submit").on("click", (event) => {
                 $('#game').append('<ul>' + item[0] + ' vs ' + item[1] + '</ul>'); 
                 
                 })
+            };
 
         });
 
 
-}); 
+}); // END. 

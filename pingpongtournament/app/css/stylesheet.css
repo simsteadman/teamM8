@@ -7,8 +7,6 @@
   }
 }
 
-
-
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -20,37 +18,42 @@ body {
   background-color: #b6ff6c;
   font-family: 'Inconsolata', monospace;
   font-weight: bold;
+
 }
 
+.jumbotron {
+  text-align: center;
+  font-family: 'Exo', sans-serif;
+  padding: 14px 24px;
+  background-color: #8685FD; 
+
+ }
 
 .row {
 	padding-top: 5px;
 	padding-bottom: 5px;
+
 }
 
 
 .col {
 	padding-top: 2px; 
 	padding-bottom: 10px;
+
 }
 
 
-.jumbotron {
-  text-align: center;
-  font-family: 'Exo', sans-serif;
-   padding: 14px 24px;
-   background-color: #8685FD; 
-   font-size: 60px;
- }
-
-
-
 .footer {
-	padding-top: 10px;
+  padding-top: 10px;
   color: #777;
   border-top: 2px solid #e5e5e5;
   font-size: 14px; 
   font-weight: normal; 
+
 }
+
+
+
+
 
 
