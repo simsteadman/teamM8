@@ -21,7 +21,7 @@ The functionality means this app can be transferred in its use beyond table tenn
 The app runs in all modern web browsers and has been written using HTML, CSS and Javascript. 
  
 
-### INSTALATION AND SETUP ###
+### INSTALLATION AND SETUP ###
 
 1. Unzip the contents of the "app" folder to a local location of your choice.
 
