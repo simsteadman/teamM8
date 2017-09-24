@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="images/favicon.ico">
+		<title>TeamM8</title>
+
+		<!-- font "work sans" -->
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo:600i|Racing+Sans+One|Istok+Web:700|Poppins:300" rel="stylesheet">
+
+
+
+		<!-- stylesheets and scripts --> 
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<span class="glyphicons glyphicons-table-tennis"></span>
+  </head>
+		
+<body> 
+
+  <!-- start container --> 
+  <div class="container">
+
+    <!--Jumbotron Header --> 
+    <div class="jumbotron">
+    <h1 class="animated tada">TeamM8</h1>
+    <h4 class="animated bounceInLeft">The Ping Pong Fixture Generator</h4>
+    </div>
+    <!--Jumbotron End --> 
+    	
+      <!-- Top row 1 begin --> 	
+    	<div class="row">
+    	   <!--add player textbox-->
+    	   <div class="col"> 
+    	   <form group="form-horizontal">
+    	   <input type="text" class="form-control" placeholder="Type to add player name" name="add" id="add">
+
+         <!--line break --> 
+         <div class="col"> 
+         </div> <!--end line break --> 
+
+         <!-- add player button--> 
+         <input type="submit" value="Add player" class="btn btn-success submit animated pulse" id="submit"/>
+         </form> 
+         <!-- form ends --> 
+         </div>
+         <!-- top left column 1 ends --> 
+
+         <!--1st row, 2nd column for listed players -->
+         <div class="col">
+         <!-- list output -->
+         <ul id="list"></ul>
+         </div>
+      </div> <!-- end of row 1 -->
+
+              <!-- row 2, left column 1  -->
+              <div class ="row">
+                  <!--new column -->
+                  <div class="col">
+                  
+                  <!--shuffle and pair button -->
+                  <input type= "submit" id="randomise" value="Randomise and match" class="btn btn-success submit submit animated shake"/>
+                  <p>Click to keep randomising</p>
+
+                  <!--line break -->
+                  <div class="col">
+                  </div>
+
+          				<!--align reset button with form group --> 
+                  <form group="form-horizontal">
+                  <!-- reset button --> 
+                  <input type="submit" value="Reset" class="btn btn-warning" submit" id="Reset" /> 
+                  <!-- end reset button -->
+                  </form>
+  		
+  		            </div> <!-- row 2, left column 1 END --> 
+
+                  <!-- PAIRS OUTPUT row 2, column 2, pairs list --> 
+                  <div class="col">	
+                  <!-- pairs output -->
+                  <ul id="game">
+                  </div> <!-- Pairs output end -->
+              </div> <!-- row 2 end --> 
+
+    <!-- footer --> 			
+    <footer class="footer">
+    <!-- tennis image --> 
+    <img src="images/tennisfavicon.png" alt="tennisicon" style="width:100px;height:100px" class="float-right"></img>
+           
+    <div class="col float-left">
+    <p>&copy; Simon Steadman 2017</p>
+    </footer>
+
+<!--end container --> 
+</div>
+  
+    <!--script--> 
+    <script src="js/main.js"></script>
+      </body>
+
+</html>
+      	
+    
+  
